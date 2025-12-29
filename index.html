@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="dashboard">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>ShopAdmin</h2>
+      <ul>
+        <li class="active">Dashboard</li>
+        <li>Products</li>
+        <li>Orders</li>
+        <li>Cart</li>
+        <li>Customers</li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+
+      <!-- Top Stats -->
+      <section class="stats">
+        <div class="card">
+          <h4>Total Orders</h4>
+          <p>1,245</p>
+        </div>
+        <div class="card">
+          <h4>Active Carts</h4>
+          <p>86</p>
+        </div>
+        <div class="card">
+          <h4>Total Revenue</h4>
+          <p>₹4,32,800</p>
+        </div>
+      </section>
+
+      <!-- Cart Table -->
+      <section class="cart-section">
+        <h3>Shopping Cart</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Qty</th>
+              <th>Total</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody id="cartBody">
+            <!-- JS will render items -->
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Cart Summary -->
+      <section class="summary">
+        <p>Subtotal: ₹<span id="subtotal">0</span></p>
+        <button>Update</button>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>
